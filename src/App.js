@@ -6,7 +6,14 @@ const messages = [
   "Invest your new income 🤑",
 ];
 
-export default function App() {
+export default function App(){
+  return <>
+    <Step/>
+    <Step/>
+  </>
+}
+
+ function Step() {
   // const step = 2;
   const [step, setState] = useState(1);
   // useState: React Hook that is used to set the default value to the state variable and return a array that consists of two elements i.e. default value and function to update the state variable
